@@ -1,0 +1,62 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh);
+  flex-direction: column;
+  direction: ltr;
+}
+.card {
+  width: 25%;
+}
+.img {
+  height: 110px;
+  width: 300px;
+}
+.form {
+  text-align: center;
+}
+
+.marg {
+  margin-bottom: 20px;
+}
+
+.icon {
+  position: relative;
+
+  color: grey;
+}
+
+.signin {
+  font-family: "Calligraffitti", cursive;
+  text-align: center;
+}
+
+.signup {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.spanSignup {
+  position: relative;
+  top: 20px;
+  right: 20px;
+}
+
+.imgButton1 {
+  height: 50px;
+  width: 55px;
+}
+
+.imgButton2 {
+  height: 50px;
+  width: 80px;
+}
+
+.upload {
+  cursor: pointer;
+}
+
+.upload:hover {
+  color: #3399ff;
+}

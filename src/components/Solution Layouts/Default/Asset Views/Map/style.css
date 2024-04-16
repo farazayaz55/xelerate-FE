@@ -1,0 +1,17 @@
+
+.pin {
+    width: 32px ;
+    height: 32px ;
+    background-image: url(../../../../assets/img/location-pin.png);
+  }
+  .pin-span {
+    content: "" ;
+    width: 20px ;
+    height: 20px ;
+    position: absolute ;
+    left: 20% ;
+    top: 7% ;
+    border-radius: 60px ;
+    /* background-image: url(https://placekitten.com/g/100/100); */
+    background-size: contain;
+  }

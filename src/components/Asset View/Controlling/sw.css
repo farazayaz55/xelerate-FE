@@ -1,0 +1,36 @@
+.power {
+  height: 150px;
+  width: 150px;
+  -webkit-appearance: none;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: 8px solid #ececec;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.power:after {
+  font-family: FontAwesome;
+  content: "\f011";
+  color: #7a7a7a;
+  font-size: 50px;
+}
+
+.power:checked {
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+.power:checked:after {
+  color: #33beff;
+}

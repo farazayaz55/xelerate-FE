@@ -1,0 +1,31 @@
+.map-container {
+  height: 100px;
+}
+
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib {
+  display: none;
+}
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
+.button {
+  border-color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 0.5);
+  width: 29px;
+  height: 29px;
+  background-color: #ffffff;
+  border-color: rgba(0, 0, 0, 0.9);
+  border-radius: 4px 4px 4px 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.button:hover {
+  background-color: #eeeeee;
+  cursor: pointer;
+}

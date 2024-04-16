@@ -1,0 +1,886 @@
+html {
+   margin: 0;
+   padding: 0;
+   font-weight: normal;
+   font-size: 15px;
+   font-family: Open Sans;
+   scroll-behavior: smooth;
+   -webkit-tap-highlight-color: transparent;
+  }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #757575;
+  border: 2px solid white;
+  border-radius: 500px;
+}
+
+.mapboxgl-popup-content {
+  border-radius: 10px;
+  padding: 0;
+}
+
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib {
+  display: none;
+}
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
+.mapboxgl-popup {
+  animation: fadein 0.4s;
+}
+
+.MuiDrawer-paper {
+  z-index: -1 !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* .html2canvas-container { 
+  width: 3000px !important; 
+  height: 3000px !important; 
+} */
+.AssetsFilter {
+  display: none !important;
+}
+
+.AssetsFilterTabView {
+  display: none !important;
+}
+
+.dashboardLeftWrap {
+  width: calc(100% - 304px);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.dashboardLeftWrapExpand {
+  /* width: calc(100% - 65px); */
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+  /* margin-left: 65px; */
+}
+
+/* .DashboardTabsWrap {
+  width: calc(100% - 350px);
+} */
+.dashboardRightSideWrap {
+  width: 300px;
+  margin: 0px 0px 10px 10px;
+  direction: ltr;
+  background-color: white;
+  height: 100vh;
+  position: fixed;
+  top: 65px;
+  right: 0px;
+  /* box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px; */
+  /* border-radius: 10px 0 0 10px; */
+  transition: 0.3s;
+  text-align: center;
+}
+
+.dashboardRightSideWrapExpanded {
+  width: 700px;
+  margin: 0px 0px 10px 10px;
+  direction: ltr;
+  background-color: white;
+  height: 100vh;
+  position: fixed;
+  top: 65px;
+  right: 0px;
+  /* box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px; */
+  /* border-radius: 10px 0 0 10px; */
+  transition: 0.3s;
+  text-align: center;
+  z-index: 100;
+}
+
+.treeFocus {
+  background-color: #91968d;
+  opacity: 0.5;
+}
+
+.dashboardRightSideWrapCollapsed {
+  width: 0px;
+  margin: 0px 0px 10px 10px;
+  direction: ltr;
+  background-color: white;
+  height: 100%;
+  position: fixed;
+  top: 65px;
+  right: -700px;
+  /* box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px; */
+  /* border-radius: 10px 0 0 10px; */
+  text-align: center;
+  transition: 0.3s;
+}
+
+.pageTabsWrap {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.pageTabsWrap ul {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.pageTabsWrap ul li {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.pageTabsWrap ul li.active {
+  border-bottom: 2px solid #3399ff;
+  color: #3399ff;
+  font-weight: 600;
+}
+
+.pageTabsWrap ul li svg {
+  margin-right: 10px;
+}
+
+.pageTabsWrap ul li.active svg {
+  margin-right: 10px;
+  color: #3399ff !important;
+}
+
+.breadcrumbs {
+  padding-left: 24px;
+  padding-top: 12px;
+  position: absolute;
+  margin-top: -50px;
+}
+
+.breadcrumbs ul {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs ul {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs ul li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.pieCard > .MuiPaper-elevation,
+.pieCard > .css-ang5ab-MuiPaper-root-MuiCard-root {
+  box-shadow: none;
+  margin: auto;
+}
+
+.minorCard,
+.assetsHealthCard,
+.criticalCard,
+.pieCard,
+.majorCard,
+.warningsCard,
+.productionCard,
+.windCard,
+.solarCard,
+.injectionCard,
+.batteryCard,
+.chartCards .css-q2osk7-MuiPaper-root {
+  box-shadow: none !important;
+  border: 1px solid #dfdfdf;
+  border-radius: 6px !important;
+}
+
+.criticalCard .cardHeader,
+.assetsHealthCard .cardHeader,
+.majorCard .cardHeader,
+.minorCard .cardHeader,
+.warningsCard .cardHeader,
+.productionCard .cardHeader,
+.windCard .cardHeader,
+.solarCard .cardHeader,
+.injectionCard .cardHeader,
+.batteryCard .cardHeader {
+  color: #c1c1c1;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 5px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.productionCard .cardBody img.assetsCardImage,
+.windCard .cardBody img.assetsCardImage,
+.solarCard .cardBody img.assetsCardImage,
+.injectionCard .cardBody img.assetsCardImage,
+.batteryCard .cardBody img.assetsCardImage {
+  position: absolute;
+  right: -10px;
+  top: 15px;
+  height: 48px;
+  width: 48px;
+}
+
+.productionCard .cardBody .bodyLeft,
+.injectionCard .cardBody .bodyLeft {
+  width: 40%;
+}
+.windCard .cardBody .bodyLeft,
+.solarCard .cardBody .bodyLeft {
+  width: 40%;
+  margin-right: 5%;
+}
+.alarmInverterCard .cardBody {
+  color: #c1c1c1;
+  font-size: 14px;
+}
+
+.criticalCard .cardBody,
+.assetsHealthCard .cardBody,
+.majorCard .cardBody,
+.minorCard .cardBody,
+.warningsCard .cardBody,
+.productionCard .cardBody,
+.windCard .cardBody,
+.solarCard .cardBody,
+.injectionCard .cardBody,
+.batteryCard .cardBody {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  margin: 0 10px;
+}
+
+.criticalCard .cardBody,
+.assetsHealthCard .cardBody,
+.majorCard .cardBody,
+.minorCard .cardBody,
+.warningsCard .cardBody {
+  align-items: center;
+  min-height: 128px;
+}
+
+.productionCard .cardBody,
+.windCard .cardBody,
+.solarCard .cardBody,
+.injectionCard .cardBody,
+.batteryCard .cardBody {
+  min-height: 100px;
+  align-items: center;
+}
+
+.criticalCard .bodyLeft,
+.assetsHealthCard .bodyLeft,
+.majorCard .bodyLeft,
+.minorCard .bodyLeft,
+.warningsCard .bodyLeft,
+.productionCard .bodyLeft,
+.injectionCard .bodyLeft,
+.batteryCard .bodyLeft {
+  width: 40%;
+}
+
+.batteryCard .bodyLeft {
+  width: 45%;
+}
+
+.criticalCard .bodyLeft p,
+.assetsHealthCard .bodyLeft p,
+.majorCard .bodyLeft p,
+.minorCard .bodyLeft p,
+.warningsCard .bodyLeft p,
+.productionCard .bodyLeft p,
+.injectionCard .bodyLeft p,
+.batteryCard .bodyLeft p {
+  text-align: left;
+}
+
+.criticalCard .bodyRight .status p,
+.assetsHealthCard .bodyRight .status p,
+.majorCard .bodyRight .status p,
+.minorCard .bodyRight .status p,
+.warningsCard .bodyRight .status p,
+.productionCard .bodyRight .status p,
+.injectionCard .bodyRight .status p,
+.batteryCard .bodyRight .status p {
+  margin-left: 30px;
+  font-weight: normal;
+}
+
+/* .criticalCard .bodyRight,
+.assetsHealthCard .bodyRight,
+.majorCard .bodyRight,
+.minorCard .bodyRight,
+.warningsCard .bodyRight,
+.productionCard .bodyRight,
+.injectionCard .bodyRight,
+.batteryCard .bodyRight {
+  width: 50%;
+} */
+
+.criticalCard .bodyLeft .toDate span {
+  color: #ce4b4b;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.criticalCard .bodyLeft .toMonth span {
+  color: #d97373;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.criticalCard .bodyRight .status span {
+  color: #bf3535;
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.criticalCard .bodyRight .status p {
+  color: #bf3535;
+}
+
+.assetsHealthCard .bodyLeft .toDate span {
+  color: #f4b183;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.assetsHealthCard .bodyLeft .toMonth span {
+  color: #ffc000;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.assetsHealthCard .bodyRight .status span {
+  color: #5a5a5a;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.majorCard .bodyLeft .toDate span {
+  color: #f88920;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.majorCard .bodyLeft .toMonth span {
+  color: #df6f07;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.majorCard .bodyRight .status p {
+  color: #df6f07;
+}
+
+.majorCard .bodyRight .status span {
+  color: #ad5605;
+  font-size: 65px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.minorCard .bodyLeft .toDate span {
+  color: #feca80;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.minorCard .bodyLeft .toMonth span {
+  color: #feb44d;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.minorCard .bodyRight .status p {
+  color: #feb44d;
+}
+
+.minorCard .bodyRight .status span {
+  color: #fe9f1b;
+  line-height: 1;
+  font-size: 65px;
+  font-weight: 600;
+}
+
+.warningsCard .bodyLeft .toDate span {
+  color: #99ccff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.warningsCard .bodyLeft .toMonth span {
+  color: #66b3ff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.warningsCard .bodyRight .status p {
+  color: #66b3ff;
+}
+
+.warningsCard .bodyRight .status span {
+  color: #3399ff;
+  line-height: 1;
+  font-size: 65px;
+  font-weight: 600;
+}
+
+.injectionCard .bodyLeft .toDate .val {
+  color: #41c3b39e;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.injectionCard .bodyLeft .toMonth .val {
+  color: #41c3b39e;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.injectionCard .bodyRight .status span {
+  color: #41c3b3;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.injectionCard .bodyRight .status p {
+  color: #41c3b3;
+  font-size: 12px;
+}
+
+.batteryCard .bodyLeft .toDate .val {
+  color: #ffd966;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.batteryCard .bodyLeft .toMonth .val {
+  color: #ffd966;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.batteryCard .bodyRight .status span {
+  color: #ffc000;
+  /* font-size: 40px; */
+  font-weight: 600;
+  /* margin-right: 80px; */
+  line-height: 1;
+}
+
+.batteryCard .bodyRight .status p {
+  color: #ffd966;
+}
+
+.productionCard .bodyLeft .toDate p,
+.productionCard .bodyLeft .toMonth p,
+.injectionCard .bodyLeft .toDate p,
+.injectionCard .bodyLeft .toMonth p,
+.batteryCard .bodyLeft .toDate p,
+.batteryCard .bodyLeft .toMonth p,
+.windCard .bodyLeft .toMonth span,
+.windCard .bodyLeft .toDate span,
+.solarCard .bodyLeft .toMonth span,
+.solarCard .bodyLeft .toDate span {
+  font-size: 12px;
+  text-align: left;
+}
+
+.productionCard .bodyLeft .toDate .val {
+  color: #f4b187;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.productionCard .bodyLeft .toMonth .val {
+  color: #f4b187;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.productionCard .bodyRight .status span {
+  color: #ed7d31;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.productionCard .bodyRight .status span small,
+.injectionCard .bodyRight .status span small {
+  font-size: 20px;
+}
+
+.productionCard .bodyRight .status p {
+  color: #ed7d31;
+  font-size: 12px;
+}
+
+.windCard .bodyLeft,
+.solarCard .bodyLeft {
+  width: 100%;
+}
+
+.windCard .bodyLeft .toDate,
+.windCard .bodyLeft .toMonth,
+.solarCard .bodyLeft .toDate,
+.solarCard .bodyLeft .toMonth {
+  text-align: left;
+}
+
+.windCard .bodyLeft .toDate p {
+  color: #1cad20b8;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: start;
+  margin-left: 20px;
+}
+
+.windCard .bodyLeft .toMonth p {
+  color: #1cad20b8;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: start;
+  margin-left: 20px;
+}
+
+.solarCard .bodyLeft .toDate p {
+  color: #6761c9c4;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: start;
+  margin-left: 20px;
+}
+
+.solarCard .bodyLeft .toMonth p {
+  color: #6761c9c4;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: start;
+  margin-left: 20px;
+}
+
+.boxCard {
+  background-color: #f5f5f5;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.m-t-10 {
+  margin-top: 15px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.alarmInverterCard {
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 15px 5px;
+  border-radius: 10px;
+}
+
+.alarmCardWrap .criticalCard,
+.alarmCardWrap .majorCard,
+.alarmCardWrap .minorCard,
+.alarmCardWrap .warningsCard {
+  min-height: 182px;
+}
+
+.alarmInverterCard .MuiPaper-root {
+  box-shadow: none;
+  background-color: transparent;
+  padding: 0 5px;
+}
+
+.alarmInverterCard .css-mhc70k-MuiGrid-root > .MuiGrid-item {
+  /* padding-top: 0 !important; */
+  padding-left: 0;
+  padding-top: 11.5px;
+}
+
+.alarmInverterCard .css-mhc70k-MuiGrid-root {
+  margin-top: 0px;
+  margin-left: 0;
+  width: inherit;
+}
+
+.DashboardTabsWrap [role="tabpanel"] .css-19kzrtu {
+  padding: 15px 0 0 0;
+}
+
+/* .alarmInverterCard {
+  padding: 15px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+} */
+.card-wrap.table {
+  border: none;
+}
+
+.card-wrap .cardHeader {
+  padding: 0 0 5px 0;
+  text-align: left;
+  color: #c1c1c1;
+  font-size: 14px;
+  text-align: center;
+}
+
+.table .card-body {
+  background-color: #f5f5f5;
+  padding: 0px 15px 0px 15px;
+  min-height: 310px;
+  max-height: 310px;
+  overflow-x: hidden;
+}
+.table.derCritical .card-body {
+  overflow-y: hidden;
+}
+.table.derCritical .card-body:hover {
+  overflow-y: initial;
+}
+
+.actualSpill {
+  position: relative;
+  /* width: max-content; */
+  margin-right: 10px;
+}
+
+.actualSpillCircle {
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  right: -12px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 5px;
+}
+
+/* .actualSpill:before {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  right: 5px;
+  background-color: red;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 5px;
+} */
+.tableWrap {
+  background-color: #f5f5f5 !important;
+  box-shadow: none !important;
+}
+
+.tableWrap tbody tr th {
+  font-weight: 600;
+  color: #525252;
+}
+
+.tableWrap table.MuiTable-root tbody tr > td {
+  border-bottom: none;
+  font-size: 12px;
+  padding: 3px 5px !important;
+  border-left-width: 0 !important;
+  text-align: right;
+  background-color: #ffffff;
+}
+
+.tableWrap table.MuiTable-root tbody tr > th {
+  border-bottom: none;
+  font-size: 10px;
+  padding: 3px 5px !important;
+  border-left-width: 0 !important;
+}
+
+.card-wrap.table.derCritical .card-body table.MuiTable-root tbody tr > th {
+  padding: 6.5px 5px !important;
+}
+
+.tableWrap table.MuiTable-root thead tr > th {
+  font-weight: 600;
+  padding: 2px 3px !important;
+  border-left-width: 0 !important;
+  font-size: 11px;
+  text-align: right;
+}
+
+/* .chartCards .card-wrap.table canvas:last-child {
+  display: none;
+} */
+
+@media screen and (max-width: 1340px) {
+  .productionCard .cardBody img.assetsCardImage,
+  .windCard .cardBody img.assetsCardImage,
+  .solarCard .cardBody img.assetsCardImage,
+  .injectionCard .cardBody img.assetsCardImage,
+  .batteryCard .cardBody img.assetsCardImage {
+    position: absolute;
+    right: -10px;
+    top: 15px;
+    height: 33px;
+    width: 33px;
+  }
+  .productionCard .cardBody .bodyLeft,
+  .injectionCard .cardBody .bodyLeft {
+    width: 30%;
+  }
+  .productionCard .bodyRight .status span,
+  .injectionCard .bodyRight .status span {
+    font-size: 44px;
+  }
+  .windCard .cardBody .bodyLeft,
+  .solarCard .cardBody .bodyLeft {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1640px) {
+  .productionCard .cardBody img.assetsCardImage,
+  .windCard .cardBody img.assetsCardImage,
+  .solarCard .cardBody img.assetsCardImage,
+  .injectionCard .cardBody img.assetsCardImage,
+  .batteryCard .cardBody img.assetsCardImage {
+    /* position: absolute;
+
+    right: -10px;
+
+    top: 0px;
+
+    height: 35px;
+
+    width: 35px; */
+
+    display: none;
+  }
+
+  #semiDonut-lbl {
+    bottom: 0px !important;
+  }
+
+  #semiDonut-lbl-rsp {
+    bottom: -10px !important;
+  }
+
+  .productionCard .cardBody .bodyLeft,
+  .injectionCard .cardBody .bodyLeft {
+    width: 45%;
+  }
+
+  .batteryCard .cardBody .bodyLeft {
+    width: 45%;
+  }
+
+  .productionCard .bodyRight .status span,
+  .injectionCard .bodyRight .status span {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1300px) {
+   html {
+   font-size: 12px;
+   }
+   /* .energy-value{
+    font-size: 1.4rem !important;
+   }
+   .energy-target, .energy-target-variance, .energy-last-period{
+    font-size: 14px !important;
+   }
+   .energy-unit{
+    font-size: 11px !important;
+   } */
+   .power-factor, .frequency{
+    font-size: 11px !important;
+   }
+   .power-factor-value, .frequency-value{
+    font-size: 10px !important;
+   }
+   .kpi-icons{
+    display: none;
+   }
+   .target-div{
+    display: none;
+   }
+   .period-stack{
+    display: none;
+   }
+   .energy-div{
+     margin: 0 auto;
+     margin-left: 20% !important;
+   }
+   .cost-div{
+    margin: 0 auto;
+    margin-left: 15% !important;
+  }
+   .kpi-div{
+    margin-top: 10px;
+   }
+   
+  }
+  
+  
+  
+  @media (max-width: 430px) {
+   html {
+   font-size: 10px;
+   }
+   .energy-value{
+    color: blue !important;
+   }
+   .edit-icons{
+    right: 4% !important;
+   }
+  }
+  
+  
+  
+  @media (max-width: 330px) {
+   html {
+   font-size: 9px;
+   }
+   .energy-value{
+    color: yellow !important;
+   }
+  }
+
+  /* @media (max-width: 500px) and (min-width: 200px){
+    .energy-value{
+      color: yellow !important;
+     }
+  } */

@@ -1,0 +1,77 @@
+.user-info {
+  color: rgb(87, 87, 87);
+  margin: 0px 500px;
+  /* padding: 5px 30px; */
+  border-radius: 6px !important;
+  height: calc(100vh - 120px);
+}
+.ticket-fields {
+  display: flex;
+  gap: 15px;
+}
+.btns {
+  /* margin: 20px 0px; */
+  /* float: right;
+  position: relative;
+  bottom: 15px;
+  right: 35px; */
+  margin: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.ticket-info {
+  margin-top: 20px;
+}
+.email,
+.phone {
+  margin: 0px;
+  color: rgb(193, 193, 193);
+  font-size: 14px;
+}
+.name {
+  color: rgb(66, 66, 66);
+}
+.addFiles {
+  text-align: center;
+  width: 200px;
+  margin: 10px auto;
+  cursor: pointer;
+  padding: 20px;
+  border: 1px solid white;
+}
+.addFiles:hover {
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 5px;
+}
+h4 {
+  color: #666;
+}
+#select-file {
+  display: none;
+}
+.files {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 15px 0px;
+  gap: 20px;
+  justify-content: center;
+}
+.file {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+.clear {
+  position: absolute;
+  left: 40px;
+  color: rgb(162, 15, 15);
+  cursor: pointer;
+  opacity: 0.3;
+}
+.clear:hover {
+  opacity: 0.9;
+}
+.single-file {
+  position: relative;
+}

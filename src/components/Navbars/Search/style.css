@@ -1,0 +1,14 @@
+.item {
+  cursor: pointer;
+  margin: 2px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.item:hover {
+  background-color: #eeeeee;
+}

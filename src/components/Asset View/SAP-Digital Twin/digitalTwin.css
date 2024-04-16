@@ -1,0 +1,59 @@
+.button {
+    border-color: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.5);
+    width: 29px;
+    height: 29px;
+    background-color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.9);
+    border-radius: 4px 4px 4px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+      rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  }
+  
+  .button:hover {
+    background-color: #eeeeee;
+    cursor: pointer;
+  }
+  
+  .values {
+    display: flex;
+    width:100%;
+    justify-content: center;
+   
+  }
+  
+  .monitoring-keys{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    max-width:85vw;
+    margin-bottom: 20px;
+  }
+  .loader {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    z-index: 999999 !important;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: grey;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: animloader 2s linear infinite;
+  }
+  .loader::after {
+    animation-delay: 1s;
+  }

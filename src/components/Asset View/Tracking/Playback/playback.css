@@ -1,0 +1,125 @@
+.loader {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    z-index: 999999 !important;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: grey;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: animloader 2s linear infinite;
+  }
+  .loader::after {
+    animation-delay: 1s;
+  }
+  .MuiPaper-root .MuiPaper-elevation .MuiPaper-elevation16 .MuiDrawer-paper .MuiDrawer-paperAnchorRight .css-1160xiw-MuiPaper-root-MuiDrawer-paper{
+    overflow: inherit !important;
+  }
+  
+  @keyframes animloader {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+.events{
+  padding: 15px;
+  height: 100%;
+  overflow: hidden;
+}
+.events-body{
+  text-align: center;
+  width: 600px;
+}
+.no-data{
+  margin-top: 60%;
+}
+.heading1{
+  font-size: 23px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(69, 69, 69);
+  margin: 20px 0px;
+}
+.heading2{
+  font-size: 23px;
+  font-weight: bold;
+  color: lightgrey;
+}
+.css-1gv0vcd-MuiSlider-track:hover{
+  z-index: 9 !important;
+}
+.MuiBox-root.css-8atqhb{
+  position: relative !important;
+}
+.hover-progress{
+    background: #444;
+    color: rgb(255, 255, 255);
+    padding: 5px 0px;
+    border-radius: 5px;
+    font-size: 11px;
+    line-height: 11px;
+    /* width: 125px; */
+    position: relative;
+    text-align: center;
+}
+.hover-progress:after {
+    right: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 0;
+    border-top: 10px solid #444;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    margin: auto;
+}
+.custom-popup{
+  position:absolute;
+  width:70%;
+  z-index: 999;
+  max-height: 200px;
+  overflow: auto;
+  right: 40px;
+  top: 0px;
+  padding: 0px 10px;
+  background-color: rgb(46 41 41);
+  color: white;
+  border-radius: 5px;
+  box-shadow: 1px 0px 4px 2px rgb(231, 231, 231);
+  display: none;
+    
+}
+.dynamic-scroll:hover{
+  overflow: auto !important;
+  padding-bottom: 0px !important;
+}
+
+.mapboxgl-popup{
+  width: 150px !important;
+}
+
+.mapboxgl-popup-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px
+}

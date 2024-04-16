@@ -1,0 +1,32 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 400px;
+  cursor: pointer;
+  box-shadow: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+
+.icon {
+  color: white;
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  height: 500px;
+  width: 500px;
+  /* opacity: 1; */
+}
+
+.icon:hover {
+  opacity: 1;
+}

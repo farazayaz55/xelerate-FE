@@ -1,0 +1,14 @@
+.ant-picker-input>input {
+    width: 110px !important;
+    font-size: 11.5px !important;
+    height: 30px !important;
+}
+
+
+.ant-picker-input {
+    width: 5vw !important;
+}
+
+.ant-picker-time-panel {
+    display: none !important;
+}

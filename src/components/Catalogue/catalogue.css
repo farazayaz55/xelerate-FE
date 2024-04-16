@@ -1,0 +1,106 @@
+.show-search {
+  width: 25% !important;
+  border-radius: 10px !important;
+  position: fixed !important;
+  bottom: 30px;
+  right: 105px;
+  background-color: white !important;
+  transition: all 0.3s ease-in-out;
+  animation: open 0.3s !important;
+}
+.hide-search {
+  width: 0% !important;
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out;
+  animation: move 0.3s !important;
+}
+.show-icon {
+  opacity: 1 !important;
+  position: fixed !important;
+  bottom: 35px !important;
+  z-index: 999 !important;
+  right: 105px !important;
+}
+.hide-icon {
+  opacity: 0 !important;
+}
+@keyframes open {
+  0% {
+    width: 0% !important;
+  }
+  25% {
+    width: 8% !important;
+  }
+  50% {
+    width: 15% !important;
+  }
+  100% {
+    width: 27% !important;
+  }
+}
+@keyframes move {
+  0% {
+    width: 27% !important;
+  }
+  25% {
+    width: 15% !important;
+  }
+  50% {
+    width: 8% !important;
+  }
+  100% {
+    width: 0% !important;
+  }
+}
+
+/* .css-1gtpq4r-MuiButtonBase-root-MuiIconButton-root {
+  position: fixed !important;
+  bottom: 35px !important;
+  z-index: 999 !important;
+  right: 115px !important;
+} */
+/* .css-7wsavl-MuiInputBase-root-MuiOutlinedInput-root {
+  
+} */
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  width: 86%;
+}
+.css-17ozvr1-MuiBadge-badge {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  position: absolute !important;
+  top: -12px !important;
+}
+/* .css-1le28he-MuiInputBase-root {
+  height: 50px !important;
+  bottom: 33px !important;
+  box-shadow: 1px 1px 4px 1px grey !important;
+} */
+.css-yz9k0d-MuiInputBase-input {
+  padding-left: 15px !important;
+}
+/* .input-search:focus{
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.btn-search:focus ~ .input-search{
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+} */
+#search-sol{
+  padding: 15px !important;
+  bottom: 33px !important;
+  box-shadow: 1px 1px 4px 1px grey !important;
+  border-radius: 10px !important;
+}
+#clear-btn{
+  position: fixed !important;
+  bottom: 35px !important;
+  z-index: 999 !important;
+  right: 105px !important;
+}
+/* #pin-icon{
+    transform: rotate(45deg) !important;
+} */
+/* #pin-icon:hover{
+    fill: grey;
+} */
